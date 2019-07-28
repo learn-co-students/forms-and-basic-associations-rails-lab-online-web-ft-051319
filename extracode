@@ -1,0 +1,10 @@
+<%notes = Note.where(song_id: @song.id)%>
+ <%notes.each_with_index do |note, index|%>
+ <input name="song[notes][index]">
+   <%end%>
+
+
+
+       <input name="song[notes_ids][]">
+       <input name="song[notes_ids][]">
+       <input name="song[notes_ids][]">
